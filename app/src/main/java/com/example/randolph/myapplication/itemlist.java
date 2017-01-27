@@ -13,6 +13,7 @@ public class itemlist extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_itemlist);
+
         gridView = (GridView) findViewById(R.id.gridITem);
         gridView.setAdapter(new ImageAdapter(this));
         gridView.setOnItemClickListener(new  AdapterView.OnItemClickListener() {
