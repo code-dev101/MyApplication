@@ -1,5 +1,6 @@
 package com.example.randolph.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -118,8 +119,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if (id == R.id.nav_camera) {
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
+            startActivity(new Intent(this,Catalog.class));
 
         } else if (id == R.id.nav_slideshow) {
+            startActivity(new Intent(this,MyCart.class));
 
         } else if (id == R.id.nav_manage) {
 
