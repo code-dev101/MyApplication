@@ -1,5 +1,6 @@
 package com.example.randolph.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
@@ -15,10 +16,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import java.util.LinkedList;
-
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
-    LinkedList<Product> itemProduct = new LinkedList<>();
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -117,8 +116,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if (id == R.id.nav_camera) {
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
+            startActivity(new Intent(this,Catalog.class));
 
         } else if (id == R.id.nav_slideshow) {
+            startActivity(new Intent(this,MyCart.class));
 
         } else if (id == R.id.nav_manage) {
 
