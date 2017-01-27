@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 
-public class Itemlist extends AppCompatActivity {
+public class itemlist extends AppCompatActivity {
     private GridView gridView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

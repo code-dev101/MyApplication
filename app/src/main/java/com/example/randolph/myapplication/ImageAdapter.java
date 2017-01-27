@@ -21,7 +21,7 @@ public class ImageAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return Catalog.listOfItem.length;
+        return catalog.listOfItem.length;
     }
 
     @Override
@@ -47,7 +47,7 @@ public class ImageAdapter extends BaseAdapter {
             imageView = (ImageView) view;
         }
 
-        imageView.setImageResource(Catalog.listOfItem[postion]);
+        imageView.setImageResource(catalog.listOfItem[postion]);
         return imageView;
     }
 

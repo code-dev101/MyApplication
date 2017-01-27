@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_itemlist"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginTop="10dp"
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5d0e48a09b5be4d4f6da4659ac13602b995428ab
     android:theme="@style/AppTheme.NoActionBar">
+
     <TextView
         android:text="STI PROWARE"
         android:layout_width="wrap_content"
@@ -19,6 +24,7 @@
         android:textIsSelectable="false"
         android:textAlignment="center"
         android:textSize="40dp" />
+
 
     <GridView
         android:layout_below="@id/textView2"
