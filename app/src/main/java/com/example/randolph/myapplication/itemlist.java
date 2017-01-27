@@ -7,7 +7,7 @@ import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.Toast;
 
-public class itemlist extends AppCompatActivity {
+public class Itemlist extends AppCompatActivity {
     private GridView gridView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

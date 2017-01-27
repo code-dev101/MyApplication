@@ -8,12 +8,8 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".MyCart"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
 
-        </activity>
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,8 +17,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".catalog" android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".itemlist" android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity android:name=".MyCart"  android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Itemlist" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Catalog" android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>
