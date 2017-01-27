@@ -8,7 +8,6 @@
 
 
    >
-
     <TextView
         android:text="STI PROWARE"
         android:layout_width="wrap_content"
@@ -29,6 +28,7 @@
         android:columnOrderPreserved="true"
         android:columnCount="2"
         android:rowCount="2"
+
 
         android:fadingEdge="horizontal|vertical"
         android:layout_marginTop="24dp"

@@ -52,7 +52,7 @@ public class catalog extends AppCompatActivity {
                     listOfItem = item_others;
                     break;
             }
-            startActivity(new Intent(getApplicationContext(),Itemlist.class));
+            startActivity(new Intent(getApplicationContext(),itemlist.class));
         }
     }
     private Integer [] items_clothes = new Integer[]{
