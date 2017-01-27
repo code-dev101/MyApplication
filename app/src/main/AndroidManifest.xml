@@ -12,17 +12,16 @@
             android:name=".catalog"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
-        <activity android:name=".MyCart">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MyCart"></activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".itemlist"></activity>
+        <activity android:name=".itemlist" />
+        <activity android:name=".AddToCart"></activity>
     </application>
 
 </manifest>
