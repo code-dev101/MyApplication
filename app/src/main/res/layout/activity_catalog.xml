@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_catalog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+   >
+
+    <TextView
+        android:text="STI PROWARE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:textColor="#FFF2FF00"
+        android:background="#FF122968"
+        android:id="@+id/textView2"
+        android:textStyle="normal|bold"
+        android:layout_alignParentEnd="true"
+        android:textIsSelectable="false"
+        android:textAlignment="center"
+        android:textSize="40dp" />
+
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        android:columnOrderPreserved="true"
+        android:columnCount="2"
+        android:rowCount="2"
+
+        android:fadingEdge="horizontal|vertical"
+        android:layout_marginTop="24dp"
+        android:soundEffectsEnabled="true"
+        android:splitMotionEvents="true"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true">
+
+
+        <RelativeLayout
+
+            android:id="@+id/layout_tshirt"
+            android:layout_margin="10dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_width="170dp"
+            android:layout_height="180dp"
+            tools:theme="@style/Animation.AppCompat.DropDownUp"
+            android:background="#FF122968">
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:id="@+id/tshirts"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/previewtshirt"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_below="@id/tshirts"
+                android:text="T-SHIRT"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:textColorLink="@android:color/white"
+                android:textColor="@android:color/background_light" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_ba"
+            android:layout_margin="10dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_width="170dp"
+            android:layout_height="180dp"
+            android:background="#FF122968">
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:id="@+id/bag"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/previewbag"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_below="@id/bag"
+                android:text="BAG"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:textColor="@android:color/background_light" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_acc"
+            android:layout_margin="10dp"
+            android:layout_row="1"
+            android:background="#FF122968"
+            android:layout_column="0"
+            android:layout_width="170dp"
+            android:layout_height="180dp">
+            <ImageView
+                android:id="@+id/acc"
+                android:layout_marginTop="5dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/previewcap"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:text="Accessories"
+                android:layout_centerInParent="true"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:textColor="@android:color/background_light" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/layout_other"
+            android:layout_margin="10dp"
+            android:layout_row="1"
+            android:background="#FF122968"
+            android:layout_column="1"
+            android:layout_width="170dp"
+            android:layout_height="180dp">
+            <ImageView
+                android:id="@+id/others"
+                android:layout_marginTop="5dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/previewothers"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:text="Others"
+                android:layout_centerInParent="true"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:textColor="@android:color/background_light" />
+        </RelativeLayout>
+    </GridLayout>
+</RelativeLayout>
