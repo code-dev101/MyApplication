@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-public class catalog extends AppCompatActivity {
+public class Catalog extends AppCompatActivity {
     private ImageView img_tshirt,img_bag,img_acc,img_others;
     public static Integer [] listOfItem;
     @Override
@@ -52,7 +52,7 @@ public class catalog extends AppCompatActivity {
                     listOfItem = item_others;
                     break;
             }
-            startActivity(new Intent(getApplicationContext(),itemlist.class));
+            startActivity(new Intent(getApplicationContext(),Itemlist.class));
         }
     }
     public static Integer [] items_clothes = new Integer[]{
