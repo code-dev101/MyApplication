@@ -17,10 +17,12 @@
         </activity>
 
 
+
         <activity android:name=".MyCart"/>
-        <activity android:name=".itemlist" />
-        <activity android:name=".catalog"/>
+        <activity android:name=".Itemlist" />
+        <activity android:name=".Catalog"/>
         <activity android:name=".AddToCart"/>
+
     </application>
 
 </manifest>

@@ -2,16 +2,13 @@ package com.example.randolph.myapplication;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
+import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.view.View;
-import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
+import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -119,7 +116,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if (id == R.id.nav_camera) {
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
-            startActivity(new Intent(this,catalog.class));
+            startActivity(new Intent(this,Catalog.class));
 
         } else if (id == R.id.nav_slideshow) {
             startActivity(new Intent(this,MyCart.class));
@@ -151,10 +148,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
             switch (position) {
                 case 0:
-                    Clothes tab1 = new Clothes();
+                    Bags tab1 = new Bags();
                     return tab1;
                 case 1:
-                    Bags tab2 = new Bags();
+
+                    Clothes tab2 = new Clothes();
                     return tab2;
                 case 2:
                     Accessories tab3 = new Accessories();

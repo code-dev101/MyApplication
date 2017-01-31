@@ -9,10 +9,10 @@
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Catalog" />
+            android:title="@string/Catalog" />
         <item
             android:id="@+id/nav_slideshow"
-            android:title="Cart" />
+            android:title="@string/Cart" />
         <item
             android:id="@+id/nav_manage"
             android:icon="@drawable/ic_menu_manage"

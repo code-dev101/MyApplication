@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-public class catalog extends AppCompatActivity {
+public class Catalog extends AppCompatActivity {
     private ImageView img_tshirt,img_bag,img_acc,img_others;
     public static Integer [] listOfItem;
     @Override
@@ -52,22 +52,22 @@ public class catalog extends AppCompatActivity {
                     listOfItem = item_others;
                     break;
             }
-            startActivity(new Intent(getApplicationContext(),itemlist.class));
+            startActivity(new Intent(getApplicationContext(),Itemlist.class));
         }
     }
-    private Integer [] items_clothes = new Integer[]{
+    public static Integer [] items_clothes = new Integer[]{
             R.drawable.anniv_tshirt,
             R.drawable.anniv_tshirt2,
             R.drawable.lim_edt,
             R.drawable.dryfit,
             R.drawable.hoody_jacket
     };
-    private Integer [] item_bags = new Integer[]{
+    public static Integer [] item_bags = new Integer[]{
             R.drawable.backpack,
             R.drawable.ecobag,
             R.drawable.slingbag,
     };
-    public Integer [] item_accs = new Integer[]{
+    public static Integer [] item_accs = new Integer[]{
             R.drawable.baller,
             R.drawable.button_pins,
             R.drawable.dog_tag,
@@ -79,7 +79,7 @@ public class catalog extends AppCompatActivity {
             R.drawable.sti_cap_black,
 
     };
-    public Integer [] item_others = new Integer[]{
+    public static Integer [] item_others = new Integer[]{
             R.drawable.sti_umbrella_folded,
             R.drawable.sti_umbrella_standard
     };
