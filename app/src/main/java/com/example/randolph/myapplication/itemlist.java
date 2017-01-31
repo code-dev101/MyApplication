@@ -19,6 +19,7 @@ public class itemlist extends AppCompatActivity {
         gridView.setOnItemClickListener(new  AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View v,
                                     int position, long id) {
+                Toast.makeText(itemlist.this, catalog.listOfItem[position], Toast.LENGTH_SHORT).show();
             }
         });
     }
