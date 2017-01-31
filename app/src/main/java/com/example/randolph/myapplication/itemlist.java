@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.Toast;
 
 public class Itemlist extends AppCompatActivity {
     private GridView gridView;
@@ -20,6 +21,7 @@ public class Itemlist extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View v,
                                     int position, long id) {
 
+                Toast.makeText(Itemlist.this, Catalog.listOfItem[position], Toast.LENGTH_SHORT).show();
             }
         });
     }

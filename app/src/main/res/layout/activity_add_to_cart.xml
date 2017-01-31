@@ -11,11 +11,91 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.randolph.myapplication.AddToCart">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:fadeScrollbars="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="180dp">
+
+        <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:id="@+id/tvQty"
+            android:textAlignment="viewStart"
+            android:textSize="22sp"
+            android:layout_alignBaseline="@+id/textView"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_toEndOf="@+id/textView" />
+
+        <TextView
+            android:text="20.00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTotalPrice"
+            android:textSize="22sp"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_toEndOf="@+id/textView4"
+            android:textAlignment="viewStart" />
+
+        <Button
+            android:id="@+id/btnAddtoCart"
+            android:background="@drawable/cart"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="Total Price: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:textSize="25sp"
+            android:layout_above="@+id/btnAddtoCart"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Quantity:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:textSize="25sp"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="44dp" />
+
+        <Button
+            android:text="-"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_dec"
+            android:textSize="30sp"
+            android:onClick="onClickQty"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:text="+"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_inc"
+            android:textSize="30sp"
+            android:onClick="onClickQty"
+            android:layout_alignBaseline="@+id/btn_dec"
+            android:layout_alignBottom="@+id/btn_dec"
+            android:layout_toEndOf="@+id/btn_dec" />
+
+    </RelativeLayout>
+
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="390dp"
-        android:layout_above="@+id/linearLayout2"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="60dp"
+        android:layout_height="370dp">
 
         <ImageView
             android:layout_width="match_parent"
@@ -26,51 +106,21 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_marginBottom="16dp"
-        android:fadeScrollbars="true"
-        android:layout_alignParentBottom="true"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
-        android:layout_height="100dp">
+        android:background="#001ee3">
 
-        <Button
-            android:text="-"
+        <TextView
+            android:text="Add to Cart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/btn_dec"
+            android:id="@+id/textView7"
             android:textSize="30sp"
-            android:layout_centerVertical="true"
-            android:layout_alignParentStart="true" />
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="number"
-            android:ems="2"
-            android:id="@+id/edt_Qty"
-            android:text="20"
-            android:textSize="30sp"
-            android:layout_alignTop="@+id/btn_dec"
-            android:layout_toEndOf="@+id/btn_dec"
-            android:layout_alignBottom="@+id/btn_dec"
-            android:textAlignment="center" />
-
-        <Button
-            android:text="+"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/btn_inc"
-            android:textSize="30sp"
-            android:layout_alignBaseline="@+id/btn_dec"
-            android:layout_alignBottom="@+id/btn_dec"
-            android:layout_toEndOf="@+id/edt_Qty" />
-
-        <Button
-            android:id="@+id/btnAddtoCart"
-            android:background="@drawable/cart"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:textStyle="normal|bold"
+            android:textColor="@color/colorPrimary"
             android:layout_centerVertical="true"
             android:layout_alignParentEnd="true" />
-
     </RelativeLayout>
+
 </RelativeLayout>
