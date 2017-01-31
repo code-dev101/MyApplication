@@ -151,10 +151,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
             switch (position) {
                 case 0:
-                    Clothes tab1 = new Clothes();
+                    Bags tab1 = new Bags();
                     return tab1;
                 case 1:
-                    Bags tab2 = new Bags();
+
+                    Clothes tab2 = new Clothes();
                     return tab2;
                 case 2:
                     Accessories tab3 = new Accessories();
