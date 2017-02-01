@@ -4,52 +4,50 @@ package com.example.randolph.myapplication;
  * Created by Randolph on 1/31/2017.
  */
 public class Product {
-    private int prodID;
-    private String prodName;
-    private String prodCategory;
-    private String prodPrice;
-    private int prodQty;
 
-    public int getProdID() {
-        return prodID;
+    private String ID;
+    private String Description;
+    private String Category;
+    private Double Price;
+    private int Qty;
+
+    public String getID() {
+        return ID;
     }
 
-    public void setProdID(int prodID) {
-        this.prodID = prodID;
+    public void setID(String ID) {
+        this.ID = ID;
     }
 
-    public String getProdName() {
-        return prodName;
+    public String getDescription() {
+        return Description;
     }
 
-    public void setProdName(String prodName) {
-        this.prodName = prodName;
+    public void setDescription(String description) {
+        Description = description;
     }
 
-    public String getProdCategory() {
-        return prodCategory;
+    public String getCategory() {
+        return Category;
     }
 
-    public void setProdCategory(String prodCategory) {
-        this.prodCategory = prodCategory;
+    public void setCategory(String category) {
+        Category = category;
     }
 
-    public String getProdPrice() {
-        return prodPrice;
+    public Double getPrice() {
+        return Price;
     }
 
-    public void setProdPrice(String prodPrice) {
-        this.prodPrice = prodPrice;
+    public void setPrice(Double price) {
+        Price = price;
     }
 
-    public int getProdQty() {
-        return prodQty;
+    public int getQty() {
+        return Qty;
     }
 
-    public void setProdQty(int prodQty) {
-        this.prodQty = prodQty;
+    public void setQty(int qty) {
+        Qty = qty;
     }
-
-
-
 }
